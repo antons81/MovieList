@@ -1,6 +1,6 @@
 //
 //  KRProgressHUD+extensions.swift
-//  Kyivpride
+//  
 //
 //  Created by Anton Stremovskiy on 04.04.2021.
 //

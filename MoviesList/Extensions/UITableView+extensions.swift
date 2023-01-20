@@ -1,9 +1,8 @@
 //
 //  UITableView+extensions.swift
-//  DarioHealthDeemo
+//  
 //
 //  Created by Anton Stremovskiy on 24.06.2020.
-//  Copyright © 2020 Shooting App. All rights reserved.
 //
 
 import Foundation
