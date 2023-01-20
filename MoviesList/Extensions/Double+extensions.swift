@@ -1,6 +1,6 @@
 //
 //  Double+extensions.swift
-//  DarioHealthDeemo
+//  
 //
 //  Created by Anton Stremovskiy on 23.11.2020.
 //

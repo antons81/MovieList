@@ -1,6 +1,6 @@
 //
 //  JSONDecodable+Extension.swift
-//  DarioHealthDeemo
+//  
 //
 //  Created by Anton Stremovskiy on 30.06.2020.
 //

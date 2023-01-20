@@ -3,7 +3,6 @@
 //  
 //
 //  Created by Anton Stremovskiy on 06.07.2020.
-//  Copyright © 2020 Shooting App. All rights reserved.
 //
 
 import Foundation
