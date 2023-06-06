@@ -14,14 +14,22 @@ final class MovieDetailsViewModel: NSObject {
     
     // MARK: - Observers
     var movie: ObservableObject<Movie> = ObservableObject(nil)
+    private let networkManager = NetworkManager()
     
-    func fetchMovieDetails(_ id: Int) {
-        KRProgressHUD.showProgress()
-        NetworkManager.shared.fetchMovieDetails(model: Movie.self,
-                                                id: id) { [weak self] movie in
-            self?.movie.value = movie
-        } errorCompletion: { _ in
+    func fetchMovieDetails(_ id: Int) async {
+        
+        mainThread {
+            KRProgressHUD.showProgress()
+        }
+        
+        do {
+            self.movie.value = try await networkManager.fetchMovieDetails(model: Movie.self,
+                                                                          id: id)
+        } catch {
             self.movie.value = nil
+            mainThread {
+                KRProgressHUD.dismiss()
+            }
         }
     }
 }

@@ -32,7 +32,9 @@ final class MovieDetailsViewController: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         self.binds()
-        self.composeData()
+        Task {
+            await self.composeData()
+        }
     }
 }
 
@@ -47,8 +49,8 @@ extension MovieDetailsViewController {
         }
     }
     
-    fileprivate func composeData() {
-        self.viewModel.fetchMovieDetails(movieId)
+    fileprivate func composeData() async {
+        await self.viewModel.fetchMovieDetails(movieId)
     }
     
     fileprivate func updateDetails(_ movie: Movie?) {

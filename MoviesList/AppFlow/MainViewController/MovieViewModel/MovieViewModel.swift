@@ -18,17 +18,22 @@ final class MovieViewModel: NSObject {
     
     // MARK: - Private variables
     private var tempMovies = Movies()
+    private let networkManager = NetworkManager()
     
-    func composeMovies() {
+    func composeMovies() async {
+        mainThread {
+            KRProgressHUD.showProgress()
+        }
         
-        KRProgressHUD.showProgress()
-        
-        NetworkManager.shared.fetchTrendingMovies(model: Movies.self) { movies in
+        do {
+            let movies = try await networkManager.fetchTrendingMovies(model: Movies.self)
             self.movies.value = movies
             self.tempMovies = self.movies.value ?? Movies()
-        } errorCompletion: { error in
+        } catch {
             self.movies.value = nil
-            KRProgressHUD.dismiss()
+            mainThread {
+                KRProgressHUD.dismiss()
+            }
         }
     }
 }
