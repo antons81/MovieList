@@ -22,14 +22,13 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         self.bind()
-        
-        Task {
-            await self.fetchMovies()
-        }
+        self.fetchMovies()
     }
     
-    @objc func fetchMovies() async {
-        await viewModel.composeMovies()
+    @objc func fetchMovies() {
+        Task {
+            await viewModel.composeMovies()
+        }
     }
 }
 
