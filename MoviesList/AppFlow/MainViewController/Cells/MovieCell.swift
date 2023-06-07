@@ -16,7 +16,16 @@ final class MovieCell: UITableViewCell, NibReusable {
     @IBOutlet weak private var releaseDate: UILabel!
     @IBOutlet weak private var rating: UILabel!
     @IBOutlet weak private var poster: UIImageView!
-
+    @IBOutlet weak private var mainView: UIView!
+    
+    
+    override func awakeFromNib() {
+        mainView.layer.masksToBounds = false
+        mainView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        mainView.layer.shadowRadius = 2
+        mainView.layer.shadowOpacity = 0.5
+    }
+    
     func setupCell(_ movie: MovieModel) {
         self.title.text = movie.title
         self.overview.text = movie.overview
