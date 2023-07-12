@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11238F69DE340F648C50BFDE /* Pods_MoviesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A407C1EFD1E499BB062E6F /* Pods_MoviesList.framework */; };
+		1E8F2E842A55C1BC0033C50D /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F2E832A55C1BC0033C50D /* UIImageView+extensions.swift */; };
 		1EFE8E242979DBFB0045437B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8E232979DBFB0045437B /* AppDelegate.swift */; };
 		1EFE8E2D2979DBFC0045437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE8E2C2979DBFC0045437B /* Assets.xcassets */; };
 		1EFE8E302979DBFC0045437B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE8E2E2979DBFC0045437B /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8F2E832A55C1BC0033C50D /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
 		1EFE8E202979DBFB0045437B /* MoviesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFE8E232979DBFB0045437B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EFE8E2C2979DBFC0045437B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				1EFE8E682979DD0B0045437B /* JSONDecodable+extensions.swift */,
 				1EFE8E6A2979DD0B0045437B /* Double+extensions.swift */,
 				1EFE8E87297A05DF0045437B /* UIViewController+extensions.swift */,
+				1E8F2E832A55C1BC0033C50D /* UIImageView+extensions.swift */,
 			);
 			name = Extensions;
 			path = MoviesList/Extensions;
@@ -388,6 +391,7 @@
 				1EFE8E5A2979DCD50045437B /* MainViewController.swift in Sources */,
 				1EFE8E532979DCD50045437B /* MovieDetailsModel.swift in Sources */,
 				1EFE8E242979DBFB0045437B /* AppDelegate.swift in Sources */,
+				1E8F2E842A55C1BC0033C50D /* UIImageView+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

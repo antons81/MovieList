@@ -9,6 +9,5 @@ import Foundation
 
 
 public class Constants {
-    
     static let imageHost = "https://image.tmdb.org/t/p/w500"
 }

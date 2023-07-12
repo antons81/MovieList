@@ -32,7 +32,8 @@ final class MovieCell: UITableViewCell, NibReusable {
         self.releaseDate.text = movie.releaseDate.stringToDate(with: "YYYY-MM-dd").dateToString(with: "dd MMMM YYYY")
         self.rating.text = "Average rate: " + movie.voteAverage.toString
         if let url = URL(string: movie.posterPath?.imageURL ?? "") {
-            self.poster.kf.setImage(with: url)
+            self.poster.imageFrom(url: url)
+            //self.poster.kf.setImage(with: url)
         }
     }
     

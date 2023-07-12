@@ -13,7 +13,6 @@ private enum EndPoints {
 }
 
 private extension EndPoints {
-    
     var endPoint: String {
         switch self {
         case .trending: return "/3/discover/movie"
@@ -67,7 +66,6 @@ final class NetworkManager {
         ]
         
         guard let url = urlComponent.url else {
-            print("Invalid URL")
             throw NetworkError.invalidURL
         }
         
@@ -86,7 +84,6 @@ final class NetworkManager {
         ]
         
         guard let url = urlComponent.url else {
-            print("Invalid URL")
             throw NetworkError.invalidURL
         }
         

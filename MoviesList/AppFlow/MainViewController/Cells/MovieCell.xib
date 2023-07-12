@@ -27,6 +27,9 @@
                                     <constraint firstAttribute="height" priority="999" constant="120" id="2ii-5s-mi1"/>
                                     <constraint firstAttribute="width" constant="80" id="YGE-OU-NIl"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="8"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3E-TC-dnL">
                                 <rect key="frame" x="96" y="8" width="294" height="19.5"/>
